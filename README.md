@@ -13,7 +13,7 @@ As the Database Administrator, my task was to design and implement a comprehensi
 - Performing database operations such as removing unnecessary columns and retrieving key insights.
 - Creating views, stored procedures, functions, and triggers to enhance database efficiency.
 - Implementing user roles and permissions for different access levels (Admin, HR, and Employees).
-- Scheduling automated backups using Task Scheduler.
+- Scheduling automated backups using Task Scheduler since SQL Server Express lacks SQL Agent.
 - (Note: Due to limitations with SQL Server Express, Azure migration was not implemented.)
 
 ## Technologies Used
@@ -24,7 +24,6 @@ As the Database Administrator, my task was to design and implement a comprehensi
 - **Documentation:** Microsoft Word / PDF (project report with screenshots)
 
 ## Project Structure
-
 
 ## Implementation Steps
 
@@ -48,7 +47,7 @@ As the Database Administrator, my task was to design and implement a comprehensi
 
 7. **Stored Procedures & Functions:**  
    - Developed a stored procedure to display the `productLine` for Classic Cars.
-   - Created a function to return customers with a credit limit less than 96800.
+   - Created a function to return customers with a credit limit less than 96,800.
 
 8. **Triggers:**  
    - Implemented triggers to:
@@ -59,10 +58,18 @@ As the Database Administrator, my task was to design and implement a comprehensi
    - Created users, roles, and logins for Admin, HR, and Employee, ensuring proper data access and security.
 
 10. **Backup & Maintenance:**  
-    - Scheduled database backups using Task Scheduler with a batch script due to the absence of SQL Agent in SQL Server Express.
+    - Scheduled database backups using Task Scheduler with a batch script since SQL Server Express lacks SQL Agent.
 
 11. **Monitoring:**  
     - Utilized Activity Monitor to record observations on processes, resource waits, and active expensive queries.
+
+## How to Use
+
+1. **Set up SQL Server:** Install Microsoft SQL Server and SQL Server Management Studio (SSMS).
+2. **Import the SQL Scripts:** Execute the provided SQL scripts to create tables, insert data, and set up views, procedures, and triggers.
+3. **Run Queries & Procedures:** Use SSMS to test queries, stored procedures, and functions.
+4. **View Database Structure:** Open the provided ER diagram to understand table relationships.
+5. **Test Security Features:** Log in with different user roles to validate access permissions.
 
 ## Screenshots & Results
 
@@ -75,15 +82,5 @@ As the Database Administrator, my task was to design and implement a comprehensi
 
 ## Challenges & Resolutions
 
-- **Data Type Mismatches:**  
-  - Minor issues with data type mismatches and formatting during data insertion were resolved by updating the SQL scripts.
-- **SQL Server Express Limitations:**  
-  - Since SQL Agent was unavailable, backups were scheduled using Task Scheduler.
-
-## Usage Instructions
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/MotorsCertification-SQL-Project.git
-
+- **Data type mismatches:** Resolved by modifying column data types and ensuring proper constraints.
+- **SQL Server Express limitations:** Used a batch script and Task Scheduler as an alternative to SQL Agent for automated backups.
