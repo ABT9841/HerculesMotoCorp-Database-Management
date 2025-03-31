@@ -74,7 +74,9 @@ As the Database Administrator, my task was to design and implement a comprehensi
 ## Screenshots & Results
 
 - **ER Diagram:**  
-  - See `https://github.com/ABT9841/HerculesMotoCorp-Database-Management/blob/98a3a386a357265329e553a3a3c4bdca4d7e7927/ER%20Diagram.png` for the complete ER model.
+  - See - **ER Diagram:**  
+  - See [`ER Diagram.png`](https://github.com/ABT9841/HerculesMotoCorp-Database-Management/blob/98a3a386a357265329e553a3a3c4bdca4d7e7927/ER%20Diagram.png) for the complete ER model.
+ for the complete ER model.
 - **Query Outputs:**  
   - Screenshots of key query executions, view creations, stored procedures, triggers, and backup operations are located in the `Screenshots` folder.
 - **Live Examples:**  
