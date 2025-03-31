@@ -74,7 +74,7 @@ As the Database Administrator, my task was to design and implement a comprehensi
 ## Screenshots & Results
 
 - **ER Diagram:**  
-  - See `Screenshots/er_diagram.png` for the complete ER model.
+  - See `ER Diagram.png` for the complete ER model.
 - **Query Outputs:**  
   - Screenshots of key query executions, view creations, stored procedures, triggers, and backup operations are located in the `Screenshots` folder.
 - **Live Examples:**  
